@@ -15,11 +15,21 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { BaseLayoutComponent } from './shared';
+import { CumulativeSummaryComponent } from './pages/cumulative-summary/cumulative-summary.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { LoginComponent } from './pages/login/login.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BaseLayoutComponent
+    BaseLayoutComponent,
+    CumulativeSummaryComponent,
+    DashboardComponent,
+    LoginComponent,
+    NotFoundComponent,
+    AuthLayoutComponent
   ],
   imports: [
     BrowserModule,

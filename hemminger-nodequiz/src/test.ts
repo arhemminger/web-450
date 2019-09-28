@@ -1,3 +1,11 @@
+/*
+============================================
+; Title:  Hemminger NodeQuiz
+; Author: Andrew Hemminger
+; Date:  27 September 2019
+; Description: NodeQuiz application
+;===========================================
+*/
 // This file is required by karma.conf.js and loads recursively all the .spec and framework files
 
 import 'zone.js/dist/zone-testing';

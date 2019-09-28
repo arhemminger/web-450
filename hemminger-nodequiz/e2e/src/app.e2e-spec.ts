@@ -1,3 +1,11 @@
+/*
+============================================
+; Title:  Hemminger NodeQuiz
+; Author: Andrew Hemminger
+; Date:  27 September 2019
+; Description: NodeQuiz application
+;===========================================
+*/
 import { AppPage } from './app.po';
 import { browser, logging } from 'protractor';
 
