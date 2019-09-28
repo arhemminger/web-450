@@ -7,9 +7,8 @@
 ;===========================================
 */
 import { Injectable } from '@angular/core';
-import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Router } from '@angular/router';
+import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
-import { Command } from 'protractor';
 
 @Injectable({providedIn: 'root'})
 export class AuthGuard implements CanActivate {
