@@ -7,8 +7,16 @@
 ;===========================================
 -->
 <div>
-  <!-- Page header -->
-  <header></header>
+<!-- Page header -->
+<header>
+  <!-- Angular Material toolbar -->
+  <mat-toolbar class="menu" role="header" color="primary">
+    <mat-toolbar-row>
+        <button mat-raised-button color="primary" class="mat-button" [routerLink]="['/']" >Node Quiz</button>
+        <button mat-raised-button color="primary" class="mat-button" [routerLink]="['/cumulative-summary']" >Cumulative Summary</button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</header>
 
   <!-- Main page content -->
   <main>
