@@ -13,6 +13,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const mongoose = require('mongoose');
 const User = require('./db-models/users');
+const Employee = require('./db-models/employee');
 
 // Global variables
 const serverPort = 3000;
@@ -37,31 +38,50 @@ mongoose.connect(connString, {promiseLibrary: require('bluebird'), useNewUrlPars
         .then(() => console.debug('Connection to the MongoDB instance was successful'))
         .catch((err) => console.debug('MongoDB Error: ' + err.message));
 
-/************************* API routes ********************/
-// Get user by userId
-app.get('/api/users/:id', function(req, res, next) {
-  User.findOne({'userId': req.params.id}, function(err, user) {
+/************************* API routes employees ********************/
+//Get all employees
+app.get('/api/employees', function(req, res, next) {
+  Employee.find({}, function(err, employees) {
     if (err) {
       console.log(err);
       return next(err);
     } else {
-      console.log(user);
-      res.json(user);
+      console.log(employees);
+      res.json(employees);
     }
   })
 });
 
-// Get all users
-app.get('/api/users', function(req, res, next) {
-  User.find({}, function(err, user) {
+//Get employee by employeeId
+app.get('/api/employees/:id', function(req, res, next) {
+  Employee.findOne({'employeeId': req.params.id}, function(err, employee) {
     if (err) {
       console.log(err);
       return next(err);
     } else {
-      console.log(user);
-      res.json(user);
+      console.log(employee);
+      res.json(employee);
     }
   })
+});
+
+//Add new employee
+app.post('/api/employees', function(req, res, next) {
+  const employee = {
+    employeeId: req.body.employeeId,
+    firstname: req.body.firstname,
+    lastname: req.body.lastname
+  };
+
+  Employee.create(employee, function(err, employees) {
+    if (err) {
+      console.log(err);
+      return next(err);
+    } else {
+      console.log(employees);
+      res.json(employees);
+    }
+  });
 });
 
 // Create Node.js server that listens on port 3000

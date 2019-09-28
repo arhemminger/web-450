@@ -7,11 +7,12 @@
 ;===========================================
 */
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-let usersSchema = mongoose.Schema({
-  userId: Number,
-  firstName: String,
-  lastName: String
-});
+let employeeSchema = new Schema({
+  employeeId: {type: String, required: true },
+  firstname: {type: String},
+  lastname: {type: String}
+})
 
-module.exports = mongoose.model('Users', usersSchema);
+module.exports = mongoose.model('Employee', employeeSchema);
