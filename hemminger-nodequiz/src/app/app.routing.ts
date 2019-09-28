@@ -6,7 +6,7 @@
 ; Description: NodeQuiz application
 ;===========================================
 */
-import {Routes, RouterModule} from '@angular/router';
+import {Routes} from '@angular/router';
 // pages imports
 import {CumulativeSummaryComponent} from './pages/cumulative-summary/cumulative-summary.component';
 import {DashboardComponent} from './pages/dashboard/dashboard.component';
