@@ -7,6 +7,9 @@
 ;===========================================
 */
 import { Component, OnInit } from '@angular/core';
+import { CookieService } from 'ngx-cookie-service';
+import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-auth-layout',
@@ -15,7 +18,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AuthLayoutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private cookieService: CookieService, private http: HttpClient) { }
 
   ngOnInit() {
   }

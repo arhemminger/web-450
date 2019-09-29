@@ -7,6 +7,9 @@
 ;===========================================
 */
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-not-found',
@@ -15,7 +18,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotFoundComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private cookieService: CookieService, private http: HttpClient) { }
 
   ngOnInit() {
   }

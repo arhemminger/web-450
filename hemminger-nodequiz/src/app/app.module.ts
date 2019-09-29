@@ -11,15 +11,17 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule} from '@angular/router';
 import { AppRoutes } from './app.routing';
-import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule, MatInputModule, MatFormFieldModule, MatCardModule } from "@angular/material";
 import { FlexLayoutModule } from "@angular/flex-layout";
-import { CookieService } from 'ngx-cookie-service';
+
+//import { CookieService } from 'ngx-cookie-service';
 
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
-import { AuthGuard } from './shared/guards/auth.guard';
+//import { AuthGuard } from './shared/guards/auth.guard';
 
 import { AppComponent } from './app.component';
 import { BaseLayoutComponent } from './shared';
@@ -44,7 +46,6 @@ import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component'
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    HttpClient,
     RouterModule.forRoot(AppRoutes, { useHash: true, enableTracing: false }),
     ActivatedRouteSnapshot,
     RouterStateSnapshot,
@@ -60,7 +61,7 @@ import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component'
     MatCardModule,
     FlexLayoutModule
   ],
-  providers: [CookieService, AuthGuard],
+  providers: [ ], //CookieService, AuthGuard
   bootstrap: [AppComponent]
 })
 export class AppModule { }

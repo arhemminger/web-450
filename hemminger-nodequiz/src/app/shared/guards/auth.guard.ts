@@ -6,14 +6,16 @@
 ; Description: NodeQuiz application
 ;===========================================
 */
+
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
 import { CookieService } from 'ngx-cookie-service';
+import { HttpClient } from 'selenium-webdriver/http';
 
 @Injectable({providedIn: 'root'})
 export class AuthGuard implements CanActivate {
 
-  constructor(private router: Router, private cookieService: CookieService) { }
+  constructor(private router: Router, private cookieService: CookieService, private http: HttpClient) { }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
 
@@ -27,3 +29,4 @@ export class AuthGuard implements CanActivate {
     }
   }
 }
+

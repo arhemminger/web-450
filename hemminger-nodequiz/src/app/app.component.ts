@@ -7,9 +7,10 @@
 ;===========================================
 */
 import { Component } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
-//import { CookieService } from 'ngx-cookie-service';
+import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
 
-  constructor(private http: HttpClient, private router: Router){
+  constructor(private http: HttpClient, private router: Router, private cookieService: CookieService){
 
   }
 

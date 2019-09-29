@@ -7,8 +7,9 @@
 ;===========================================
 */
 import { Component, OnInit } from '@angular/core';
-import {CookieService} from 'ngx-cookie-service';
-import {Router} from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
+import { Router } from '@angular/router';
+import { HttpClient } from 'selenium-webdriver/http';
 
 @Component({
   selector: 'app-base-layout',
@@ -17,7 +18,7 @@ import {Router} from '@angular/router';
 })
 export class BaseLayoutComponent implements OnInit {
 
-  constructor(private cookieService: CookieService, private router: Router) { }
+  constructor(private router: Router, private cookieService: CookieService, private http: HttpClient) { }
 
   ngOnInit() {
   }

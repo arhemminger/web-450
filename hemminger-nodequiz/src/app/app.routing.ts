@@ -21,7 +21,7 @@ import {AuthGuard} from './shared/guards/auth.guard';
 export const AppRoutes: Routes = [
   {
     path: '',
-    component: BaseLayoutComponent,
+    component: BaseLayoutComponent ,
     children: [
       {
         path: 'dashboard',
