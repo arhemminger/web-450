@@ -20,11 +20,11 @@ import {AuthGuard} from './shared/guards/auth.guard';
 
 export const AppRoutes: Routes = [
   {
-    path: 'dashboard',
+    path: '',
     component: BaseLayoutComponent,
     children: [
       {
-        path: '',
+        path: 'dashboard',
         component: DashboardComponent,
         canActivate: [AuthGuard]
       },

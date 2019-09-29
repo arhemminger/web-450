@@ -17,17 +17,18 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent implements OnInit {
 
   form: FormGroup;
   errorMessage: string;
-  validEmployeeIds = [1007, 1008, 1009, 1010, 1011];
+  //validEmployeeIds = [1007, 1008, 1009, 1010, 1011];
 
   constructor(private router: Router, private cookieService: CookieService, private fb: FormBuilder, private http: HttpClient ) { }
 
   ngOnInit() {
     this.form = this.fb.group({
-      employeeId: [null, Validators.compose([Validators.required, Validators.pattern('[0-9]*')])]
+      employeeId: [null, Validators.compose([Validators.required, Validators.pattern('^[0-9]*$')])]
     });
   }
 
@@ -46,11 +47,12 @@ export class LoginComponent implements OnInit {
       }
     })
 
-    if (this.validEmployeeIds.includes(parseInt(employeeId, 10))) {
+/*    if (this.validEmployeeIds.includes(parseInt(employeeId, 10))) {
       this.cookieService.set('isAuthenticated', 'true', 1); //add a cookie to the users browser with a value of true and exp. 1 day.
       this.router.navigate(['/dashboard']);
       } else {
         this.errorMessage = 'The employee ID you entered is invalid.';
       }
+*/
     }
   }

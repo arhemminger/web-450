@@ -17,6 +17,10 @@ import { MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule, MatInp
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { CookieService } from 'ngx-cookie-service';
 
+import { Injectable } from '@angular/core';
+import { ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
+import { AuthGuard } from './shared/guards/auth.guard';
+
 import { AppComponent } from './app.component';
 import { BaseLayoutComponent } from './shared';
 import { CumulativeSummaryComponent } from './pages/cumulative-summary/cumulative-summary.component';
@@ -33,7 +37,8 @@ import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component'
     DashboardComponent,
     LoginComponent,
     NotFoundComponent,
-    AuthLayoutComponent
+    AuthLayoutComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -41,6 +46,10 @@ import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component'
     HttpClientModule,
     HttpClient,
     RouterModule.forRoot(AppRoutes, { useHash: true, enableTracing: false }),
+    ActivatedRouteSnapshot,
+    RouterStateSnapshot,
+    Router,
+    Injectable,
     FormsModule,
     MatButtonModule,
     MatIconModule,
@@ -51,7 +60,7 @@ import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component'
     MatCardModule,
     FlexLayoutModule
   ],
-  providers: [CookieService],
+  providers: [CookieService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
