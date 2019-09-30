@@ -9,7 +9,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { Router } from '@angular/router';
-import { HttpClient } from 'selenium-webdriver/http';
 
 @Component({
   selector: 'app-base-layout',
@@ -18,9 +17,10 @@ import { HttpClient } from 'selenium-webdriver/http';
 })
 export class BaseLayoutComponent implements OnInit {
 
-  constructor(private router: Router, private cookieService: CookieService, private http: HttpClient) { }
+  constructor(private router: Router, private cookieService: CookieService) { }
 
   ngOnInit() {
   }
 
+  // logout goes here
 }

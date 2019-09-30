@@ -17,9 +17,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule, MatInputModule, MatFormFieldModule, MatCardModule } from "@angular/material";
 import { FlexLayoutModule } from "@angular/flex-layout";
 
-//import { Injectable } from '@angular/core';
-//import { ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
 import { AuthGuard } from './shared/guards/auth.guard';
+import { CookieService } from 'ngx-cookie-service';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 // components
 import { AppComponent } from './app.component';
@@ -29,7 +29,6 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component';
-import { CookieService } from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -47,10 +46,6 @@ import { CookieService } from 'ngx-cookie-service';
     BrowserAnimationsModule,
     HttpClientModule,
     RouterModule.forRoot(AppRoutes, { useHash: true, enableTracing: false }),
-    //ActivatedRouteSnapshot,
-    //RouterStateSnapshot,
-    //Router,
-    //Injectable,
     FormsModule,
     ReactiveFormsModule,
     MatButtonModule,
@@ -62,7 +57,7 @@ import { CookieService } from 'ngx-cookie-service';
     MatCardModule,
     FlexLayoutModule
   ],
-  providers: [CookieService, AuthGuard],
+  providers: [CookieService, AuthGuard, {provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

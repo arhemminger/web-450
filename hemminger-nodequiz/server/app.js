@@ -12,7 +12,6 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const path = require('path');
 const mongoose = require('mongoose');
-const User = require('./db-models/users');
 const Employee = require('./db-models/employee');
 
 // Global variables
