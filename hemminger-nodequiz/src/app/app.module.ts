@@ -57,7 +57,7 @@ import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component'
     MatCardModule,
     FlexLayoutModule
   ],
-  providers: [CookieService, AuthGuard, {provide: LocationStrategy, useClass: HashLocationStrategy}],
+  providers: [CookieService, AuthGuard], //, {provide: LocationStrategy, useClass: HashLocationStrategy}
   bootstrap: [AppComponent]
 })
 export class AppModule { }

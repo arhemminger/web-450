@@ -20,52 +20,11 @@ import {AuthGuard} from './shared/guards/auth.guard';
 
 export const AppRoutes: Routes = [
   {
-    path: '',
-    component: AuthLayoutComponent,
-    children: [
-      {
-        path: '',
-        component: LoginComponent
-      }
-    ]
-  },
-  {
     path: 'dashboard',
-    component: BaseLayoutComponent,
-    children: [
-      {
-        path: '',
-        component: DashboardComponent,
-        canActivate: [AuthGuard]
-      },
-      {
-        path: 'cumulative-summary',
-        component: CumulativeSummaryComponent,
-        canActivate: [AuthGuard]
-      }
-    ]
-  },
-  {
-    path: 'session',
-    component: AuthLayoutComponent,
-    children: [
-      {
-        path: 'login',
-        component: LoginComponent
-      },
-      {
-        path: 'not-found',
-        component: NotFoundComponent
-      }
-    ]
-  },
-  /*
-  {
-    path: '',
     component: BaseLayoutComponent ,
     children: [
       {
-        path: 'dashboard',
+        path: '',
         component: DashboardComponent,
         canActivate: [AuthGuard]
       },
@@ -84,6 +43,5 @@ export const AppRoutes: Routes = [
       { path: 'not-found', component: NotFoundComponent }
     ]
   },
-  */
   { path: '**', redirectTo: 'session/not-found' }
 ];
