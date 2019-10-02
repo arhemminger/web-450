@@ -25,8 +25,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({'extended': true}));
 app.use(morgan('dev'));
 
-app.use(express.static(path.join(__dirname, '../dist/hemminger-nodequiz')));
-app.use('/', express.static(path.join(__dirname, '../dist/hemminger-nodequiz')));
+app.use(express.static(path.join(__dirname, '../dist/nodequiz')));
+app.use('/', express.static(path.join(__dirname, '../dist/nodequiz')));
 
 /************************* Mongoose connection***************/
 // MongoDB (Atlas) connection string

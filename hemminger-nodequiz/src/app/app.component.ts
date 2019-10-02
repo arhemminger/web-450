@@ -28,7 +28,7 @@ export class AppComponent {
   validateEmployee(employee) {
     this.http.get('/api/employees/' + employee).subscribe(res => {
       if (res) {
-        this.router.navigate(['/dashboard']);
+        this.router.navigate(['']);
       } else {
         console.log('Invalid employeeId')
       }

@@ -17,11 +17,10 @@ import {AuthLayoutComponent} from './shared/auth-layout/auth-layout.component';
 import {BaseLayoutComponent} from './shared';
 import {AuthGuard} from './shared/guards/auth.guard';
 
-
 export const AppRoutes: Routes = [
   {
-    path: 'dashboard',
-    component: BaseLayoutComponent ,
+    path: '', //:username
+    component: BaseLayoutComponent,
     children: [
       {
         path: '',
@@ -39,9 +38,19 @@ export const AppRoutes: Routes = [
     path: 'session',
     component: AuthLayoutComponent,
     children: [
-      { path: 'login', component: LoginComponent },
-      { path: 'not-found', component: NotFoundComponent }
+      {
+        path: 'login',
+        component: LoginComponent
+      },
+
+      {
+        path: 'not-found',
+        component: NotFoundComponent
+      }
     ]
   },
-  { path: '**', redirectTo: 'session/not-found' }
+  {
+    path: '**',
+    redirectTo: 'session/not-found'
+  }
 ];

@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.form = this.fb.group({
-      employeeId: [null, Validators.compose([Validators.required, Validators.pattern('^[0-9]*$')])]
+      employeeId: [null, Validators.compose([Validators.required])] //, Validators.pattern('^[0-9]*$')
     });
   }
 
@@ -37,19 +37,19 @@ export class LoginComponent implements OnInit {
     console.log(employeeId);
 
     //If the employeeId is in the validEmployeeId's array, the user is authenticated and we will grant them access
-
     this.http.get('/api/employees/' + employeeId).subscribe( res => {
       if (res !== null) {
-        this.cookieService.set('isAuthenticated', 'true', 1); //add a cookie to the users browser with a value of true and exp. 1 day.
-        this.router.navigate(['/dashboard']);
+        this.cookieService.set('isAuthenticated', 'true'); //add a cookie to the users browser with a value of true for the session.
+        this.router.navigate(['']);
       } else {
         this.errorMessage = 'The employee ID you entered is invalid.';
+        location.reload();
       }
     })
 
 /*    if (this.validEmployeeIds.includes(parseInt(employeeId, 10))) {
       this.cookieService.set('isAuthenticated', 'true', 1); //add a cookie to the users browser with a value of true and exp. 1 day.
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['/']);
       } else {
         this.errorMessage = 'The employee ID you entered is invalid.';
       }
