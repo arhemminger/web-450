@@ -1,2 +1,7 @@
 /* Importing prebuilt Angular Material theme */
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.heading {
+  text-align: center;
+  padding: 15px;
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "quizId": 101,
+    "presentation": "JSON REST APIs",
+    "images": [
+      {"name": "s1", "image": "./Quiz1_JSON_REST_APIs/Slide1.JPG"},
+      {"name": "s2", "image": "./Quiz1_JSON_REST_APIs/Slide2.JPG"},
+      {"name": "s3", "image": "./Quiz1_JSON_REST_APIs/Slide3.JPG"},
+      {"name": "s4", "image": "./Quiz1_JSON_REST_APIs/Slide4.JPG"},
+      {"name": "s5", "image": "./Quiz1_JSON_REST_APIs/Slide5.JPG"},
+      {"name": "s6", "image": "./Quiz1_JSON_REST_APIs/Slide6.JPG"},
+      {"name": "s7", "image": "./Quiz1_JSON_REST_APIs/Slide7.JPG"},
+      {"name": "s8", "image": "./Quiz1_JSON_REST_APIs/Slide8.JPG"},
+      {"name": "s9", "image": "./Quiz1_JSON_REST_APIs/Slide9.JPG"},
+      {"name": "s10", "image": "./Quiz1_JSON_REST_APIs/Slide10.JPG"},
+      {"name": "s11", "image": "./Quiz1_JSON_REST_APIs/Slide11.JPG"},
+      {"name": "s12", "image": "./Quiz1_JSON_REST_APIs/Slide12.JPG"}
+    ]
+  },
+  {
+    "quizId": 102,
+    "presentation": "Continuous Integration",
+    "images": [
+      {"name": "s1", "image": "./Quiz2_Continuous_Integration/Slide1.JPG"},
+      {"name": "s2", "image": "./Quiz2_Continuous_Integration/Slide2.JPG"},
+      {"name": "s3", "image": "./Quiz2_Continuous_Integration/Slide3.JPG"},
+      {"name": "s4", "image": "./Quiz2_Continuous_Integration/Slide4.JPG"},
+      {"name": "s5", "image": "./Quiz2_Continuous_Integration/Slide5.JPG"},
+      {"name": "s6", "image": "./Quiz2_Continuous_Integration/Slide6.JPG"},
+      {"name": "s7", "image": "./Quiz2_Continuous_Integration/Slide7.JPG"},
+      {"name": "s8", "image": "./Quiz2_Continuous_Integration/Slide8.JPG"},
+      {"name": "s9", "image": "./Quiz2_Continuous_Integration/Slide9.JPG"},
+      {"name": "s10", "image": "./Quiz2_Continuous_Integration/Slide10.JPG"},
+      {"name": "s11", "image": "./Quiz2_Continuous_Integration/Slide11.JPG"},
+      {"name": "s12", "image": "./Quiz2_Continuous_Integration/Slide12.JPG"}
+    ]
+  },
+  {
+    "quizId": 103,
+    "presentation": "REST Methodologies",
+    "images": [
+      {"name": "s1", "image": "./Quiz3_REST_methodologies/Slide1.JPG"},
+      {"name": "s2", "image": "./Quiz3_REST_methodologies/Slide2.JPG"},
+      {"name": "s3", "image": "./Quiz3_REST_methodologies/Slide3.JPG"},
+      {"name": "s4", "image": "./Quiz3_REST_methodologies/Slide4.JPG"},
+      {"name": "s5", "image": "./Quiz3_REST_methodologies/Slide5.JPG"},
+      {"name": "s6", "image": "./Quiz3_REST_methodologies/Slide6.JPG"},
+      {"name": "s7", "image": "./Quiz3_REST_methodologies/Slide7.JPG"},
+      {"name": "s8", "image": "./Quiz3_REST_methodologies/Slide8.JPG"},
+      {"name": "s9", "image": "./Quiz3_REST_methodologies/Slide9.JPG"},
+      {"name": "s10", "image": "./Quiz3_REST_methodologies/Slide10.JPG"},
+      {"name": "s11", "image": "./Quiz3_REST_methodologies/Slide11.JPG"},
+      {"name": "s12", "image": "./Quiz3_REST_methodologies/Slide12.JPG"}
+    ]
+  }
+]
