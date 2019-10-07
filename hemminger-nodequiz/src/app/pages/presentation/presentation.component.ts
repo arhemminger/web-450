@@ -1,3 +1,11 @@
+/*
+============================================
+; Title:  Hemminger NodeQuiz
+; Author: Andrew Hemminger
+; Date:  6 October 2019
+; Description: NodeQuiz application
+;===========================================
+*/
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import presentations from '../../../assets/data/presentations.json';

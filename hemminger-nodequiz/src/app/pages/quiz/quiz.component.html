@@ -13,3 +13,32 @@
   <br>
 
 
+  <!--quiz material card-->
+  <mat-card class="quiz-card">
+    <mat-card-header>
+      <mat-card-title>Quiz 101</mat-card-title>
+      <mat-card-subtitle>JSON APIs</mat-card-subtitle>
+    </mat-card-header>
+    <hr>
+
+    <mat-card-content>
+
+      <div>
+        <h5>1.	What does “JSON” stand for?</h5>
+        <div>
+          <mat-radio-group [(ngModel)]="Answers" aria-labelledby="radio-group-label" class="radio-group">
+            <mat-radio-button *ngFor="let answer of answers" [value]="answer" class="radio-button">{{answer}}</mat-radio-button>
+          </mat-radio-group>
+        </div>
+      </div>
+
+      <hr>
+
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-raised-button color="primary" class="mat-button">Submit</button>
+    </mat-card-actions>
+
+  </mat-card>
+

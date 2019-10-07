@@ -10,8 +10,8 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-auth-layout',
-  templateUrl: './auth-layout.component.html',
-  styleUrls: ['./auth-layout.component.css']
+  template: `<router-outlet></router-outlet>`,
+  styles: []
 })
 export class AuthLayoutComponent implements OnInit {
 

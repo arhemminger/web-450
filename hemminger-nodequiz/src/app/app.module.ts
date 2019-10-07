@@ -14,8 +14,9 @@ import { RouterModule} from '@angular/router';
 import { AppRoutes } from './app.routing';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule, MatInputModule, MatFormFieldModule, MatCardModule, MatMenuItem } from "@angular/material";
+import { MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule, MatInputModule, MatFormFieldModule, MatCardModule, MatMenuItem, MatRadioButton } from "@angular/material";
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatRadioModule } from '@angular/material/radio';
 
 import { AuthGuard } from './shared/guards/auth.guard';
 import { CookieService } from 'ngx-cookie-service';
@@ -60,9 +61,13 @@ import { PresentationComponent } from './pages/presentation/presentation.compone
     MatFormFieldModule,
     MatCardModule,
     FlexLayoutModule,
-    CarouselModule
+    CarouselModule,
+    MatRadioModule
   ],
-  providers: [CookieService, AuthGuard], //, {provide: LocationStrategy, useClass: HashLocationStrategy}
+  providers: [
+    CookieService,
+    AuthGuard
+  ], //, {provide: LocationStrategy, useClass: HashLocationStrategy}
   bootstrap: [AppComponent]
 })
 export class AppModule { }
