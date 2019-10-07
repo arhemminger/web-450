@@ -1,0 +1,59 @@
+[
+  {
+    "presentationId": 101,
+    "name": "JSON REST APIs",
+    "description": "Basic concepts and understanding of JSON REST APIs.",
+    "slides": [
+      {"image": "assets/images/Quiz1_JSON_REST_APIs/Slide1.JPG"},
+      {"image": "assets/images/Quiz1_JSON_REST_APIs/Slide2.JPG"},
+      {"image": "assets/images/Quiz1_JSON_REST_APIs/Slide3.JPG"},
+      {"image": "assets/images/Quiz1_JSON_REST_APIs/Slide4.JPG"},
+      {"image": "assets/images/Quiz1_JSON_REST_APIs/Slide5.JPG"},
+      {"image": "assets/images/Quiz1_JSON_REST_APIs/Slide6.JPG"},
+      {"image": "assets/images/Quiz1_JSON_REST_APIs/Slide7.JPG"},
+      {"image": "assets/images/Quiz1_JSON_REST_APIs/Slide8.JPG"},
+      {"image": "assets/images/Quiz1_JSON_REST_APIs/Slide9.JPG"},
+      {"image": "assets/images/Quiz1_JSON_REST_APIs/Slide10.JPG"},
+      {"image": "assets/images/Quiz1_JSON_REST_APIs/Slide11.JPG"},
+      {"image": "assets/images/Quiz1_JSON_REST_APIs/Slide12.JPG"}
+    ]
+  },
+  {
+    "presentationId": 102,
+    "name": "Continuous Integration",
+    "description": "Basic concepts and understanding of Continuous Integration.",
+    "slides": [
+      {"image": "./assets/images/Quiz2_Continuous_Integration/Slide1.JPG"},
+      {"image": "./assets/images/Quiz2_Continuous_Integration/Slide2.JPG"},
+      {"image": "./assets/images/Quiz2_Continuous_Integration/Slide3.JPG"},
+      {"image": "./assets/images/Quiz2_Continuous_Integration/Slide4.JPG"},
+      {"image": "./assets/images/Quiz2_Continuous_Integration/Slide5.JPG"},
+      {"image": "./assets/images/Quiz2_Continuous_Integration/Slide6.JPG"},
+      {"image": "./assets/images/Quiz2_Continuous_Integration/Slide7.JPG"},
+      {"image": "./assets/images/Quiz2_Continuous_Integration/Slide8.JPG"},
+      {"image": "./assets/images/Quiz2_Continuous_Integration/Slide9.JPG"},
+      {"image": "./assets/images/Quiz2_Continuous_Integration/Slide10.JPG"},
+      {"image": "./assets/images/Quiz2_Continuous_Integration/Slide11.JPG"},
+      {"image": "./assets/images/Quiz2_Continuous_Integration/Slide12.JPG"}
+    ]
+  },
+  {
+    "presentationId": 103,
+    "name": "REST Methodologies",
+    "description": "Basic concepts and understanding of REST Methodologies.",
+    "slides": [
+      {"image": "./assets/images/Quiz3_REST_methodologies/Slide1.JPG"},
+      {"image": "./assets/images/Quiz3_REST_methodologies/Slide2.JPG"},
+      {"image": "./assets/images/Quiz3_REST_methodologies/Slide3.JPG"},
+      {"image": "./assets/images/Quiz3_REST_methodologies/Slide4.JPG"},
+      {"image": "./assets/images/Quiz3_REST_methodologies/Slide5.JPG"},
+      {"image": "./assets/images/Quiz3_REST_methodologies/Slide6.JPG"},
+      {"image": "./assets/images/Quiz3_REST_methodologies/Slide7.JPG"},
+      {"image": "./assets/images/Quiz3_REST_methodologies/Slide8.JPG"},
+      {"image": "./assets/images/Quiz3_REST_methodologies/Slide9.JPG"},
+      {"image": "./assets/images/Quiz3_REST_methodologies/Slide10.JPG"},
+      {"image": "./assets/images/Quiz3_REST_methodologies/Slide11.JPG"},
+      {"image": "./assets/images/Quiz3_REST_methodologies/Slide12.JPG"}
+    ]
+  }
+]

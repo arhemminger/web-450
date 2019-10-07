@@ -1,0 +1,803 @@
+[
+  {
+    "quizId": 101,
+    "name": "JSON REST APIs",
+    "description": "This quiz covers the basic concepts and understanding around JSON REST APIs.",
+    "questions": [
+      {
+        "id": 1,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "quizId": 102,
+    "name": "Continuous Integration",
+    "description": "This quiz covers the basic concepts and understanding around Continuous Integration.",
+    "questions": [
+      {
+        "id": 1,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "quizId": 103,
+    "name": "REST Methodologies",
+    "description": "This quiz covers the basic concepts and understanding around REST Methodologies.",
+    "questions": [
+      {
+        "id": 1,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "text": "some_question?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "b",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "c",
+            "text": "some_answer",
+            "isCorrect": false
+          },
+          {
+            "id": "d",
+            "text": "some_answer",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  }
+]

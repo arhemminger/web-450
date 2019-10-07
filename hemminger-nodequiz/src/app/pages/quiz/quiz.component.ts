@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-quiz',
@@ -7,7 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuizComponent implements OnInit {
 
-  constructor() { }
+quizzes = [];
+quizId: number;
+
+getQuizzes(id) {
+  this.http.get('/assets/data/quizzes.json').subscribe(res => {
+    return this.quizzes.filter(quiz => quiz.id === id);
+  })
+}
+
+  constructor(private route: ActivatedRoute, private router: Router, private http: HttpClient) {
+   //this.quizId = this.router.snapshot.paramMap.get('id');
+   }
 
   ngOnInit() {
   }

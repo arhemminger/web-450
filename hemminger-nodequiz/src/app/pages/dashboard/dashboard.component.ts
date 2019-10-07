@@ -7,6 +7,8 @@
 ;===========================================
 */
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -15,9 +17,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
+
+// Presentation selection function
+viewPresentation(presentationId) {
+  this.router.navigate(['presentation']);
+  console.log(presentationId);
+}
+
+// Presentation selection function
+takeQuiz(quizId) {
+  this.router.navigate(['quiz']);
+  console.log(quizId);
+}
 
 }

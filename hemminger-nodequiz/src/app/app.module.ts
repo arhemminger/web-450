@@ -14,12 +14,13 @@ import { RouterModule} from '@angular/router';
 import { AppRoutes } from './app.routing';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule, MatInputModule, MatFormFieldModule, MatCardModule } from "@angular/material";
+import { MatButtonModule, MatIconModule, MatMenuModule, MatToolbarModule, MatInputModule, MatFormFieldModule, MatCardModule, MatMenuItem } from "@angular/material";
 import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { AuthGuard } from './shared/guards/auth.guard';
 import { CookieService } from 'ngx-cookie-service';
-import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { CarouselModule } from 'primeng/carousel';
+//import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 // components
 import { AppComponent } from './app.component';
@@ -30,6 +31,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { AuthLayoutComponent } from './shared/auth-layout/auth-layout.component';
 import { QuizComponent } from './pages/quiz/quiz.component';
+import { PresentationComponent } from './pages/presentation/presentation.component';
 
 @NgModule({
   declarations: [
@@ -40,8 +42,8 @@ import { QuizComponent } from './pages/quiz/quiz.component';
     LoginComponent,
     NotFoundComponent,
     AuthLayoutComponent,
-    QuizComponent
-
+    QuizComponent,
+    PresentationComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +59,8 @@ import { QuizComponent } from './pages/quiz/quiz.component';
     MatInputModule,
     MatFormFieldModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    CarouselModule
   ],
   providers: [CookieService, AuthGuard], //, {provide: LocationStrategy, useClass: HashLocationStrategy}
   bootstrap: [AppComponent]

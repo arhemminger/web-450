@@ -13,6 +13,8 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const mongoose = require('mongoose');
 const Employee = require('./db-models/employee');
+const Presentation = require('./db-models/presentations');
+const Quiz = require('./db-models/quizzes');
 
 // Global variables
 const serverPort = 3000;
@@ -82,6 +84,36 @@ app.post('/api/employees', function(req, res, next) {
     }
   });
 });
+
+/************************* API routes presentations ********************/
+//Get presentation by presentationId
+app.get('/api/presentations/:id', function(req, res, next) {
+  Presentation.findOne({'presentationId': req.params.id}, function(err, presentation) {
+    if (err) {
+      console.log(err);
+      return next(err);
+    } else {
+      console.log(presentation);
+      res.json(presentation);
+    }
+  })
+});
+
+/************************* API routes quizzes ********************/
+//Get quiz by quizId
+app.get('/api/quizzes/:id', function(req, res, next) {
+  Quiz.findOne({'quizId': req.params.id}, function(err, quiz) {
+    if (err) {
+      console.log(err);
+      return next(err);
+    } else {
+      console.log(quiz);
+      res.json(quiz);
+    }
+  })
+});
+
+
 
 // Create Node.js server that listens on port 3000
 http.createServer(app).listen(serverPort, function() {

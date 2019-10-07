@@ -2,3 +2,7 @@
   background-color: lightgrey;
   height: 100%;
 }
+
+#presentation {
+  display: none;
+}

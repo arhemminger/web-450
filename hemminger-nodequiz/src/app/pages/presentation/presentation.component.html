@@ -1,0 +1,27 @@
+
+<br>
+
+<div class="heading">
+  <h2>Presentation</h2>
+</div>
+
+<div fxLayout="column" style="margin-left: 10%; width: 80%;">
+    <mat-card class="mat-elevation-z8">
+        <mat-card-title>Primeng Carousel</mat-card-title>
+        <mat-card-content>
+            <p-carousel [value]="slides" numVisible="1"> <!--     responsive=true   [value]="./assets/data/presentations/{{presentationId}}"-->
+                <ng-template style="text-align: center;" let-item pTemplate="item">
+                    <br /><br />
+                    <div fxLayout="column" fxLayoutAlign="center center">
+                        <div fxFlex>
+                            <img src=""> <!--./assets/images/{{item.image}}-->
+                        </div>
+                    </div><br /><br />
+                </ng-template>
+            </p-carousel>
+        </mat-card-content>
+        <mat-card-actions>
+            <small>Presentations sourced from <a href="https://arhemminger.github.io/" target="_blank">https://arhemminger.github.io/</a></small>
+        </mat-card-actions>
+    </mat-card>
+</div>
