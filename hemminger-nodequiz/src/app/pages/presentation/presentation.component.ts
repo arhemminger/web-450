@@ -7,9 +7,7 @@
 ;===========================================
 */
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import presentations from '../../../assets/data/presentations.json';
-
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-presentation',
@@ -17,10 +15,11 @@ import presentations from '../../../assets/data/presentations.json';
   styleUrls: ['./presentation.component.css']
 })
 export class PresentationComponent implements OnInit {
+  presentationId = "initial value";
   title = 'Quiz presentation carousel'
   images: any;
 
-  constructor() {
+  constructor(private readonly route: ActivatedRoute, private readonly router: Router) {
     this.images = [
       {name: 'Quiz 101 slide 1', image: 'q101s1.JPG'},
       {name: 'Quiz 101 slide 2', image: 'q101s2.JPG'},
@@ -38,8 +37,20 @@ export class PresentationComponent implements OnInit {
   }
 
   ngOnInit() {
+    // No Subscription
+    this.presentationId = this.route.snapshot.paramMap.get("presentationId");
+
+/*
+    // Subscribed
+    this.route.paramMap.subscribe(params => {
+      this.presentationId = params.get("presentationId");
+    });
+*/
   }
+
+  goto(presentationId: string): void {
+    this.router.navigate(["presentation", presentationId]);
 
 }
 
-
+}

@@ -24,7 +24,7 @@ export class DashboardComponent implements OnInit {
 
 // Presentation selection function
 viewPresentation(presentationId) {
-  this.router.navigate(['presentation']);
+  this.router.navigate(['presentation/:presenationId']);
   console.log(presentationId);
 }
 
