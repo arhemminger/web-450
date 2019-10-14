@@ -17,7 +17,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./quiz.component.css']
 })
 export class QuizComponent implements OnInit {
-/**   Starting template  **
+/**   Starting template  **/
 Answer: string;
 answers: string[] = ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4'];
 
@@ -29,8 +29,8 @@ getQuizzes(id) {
     return this.quizzes.filter(quiz => quiz.id === id);
   })
 }
-*/
-quizId: number;
+
+//quizId: number;
 //employeeId: number;
 //quizzes: any;
 quiz: any;
