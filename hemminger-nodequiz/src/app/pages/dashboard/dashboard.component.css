@@ -6,3 +6,14 @@
 #presentation {
   display: none;
 }
+
+a:link, a:visited {
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:active, a:hover {
+  color: cyan;
+}

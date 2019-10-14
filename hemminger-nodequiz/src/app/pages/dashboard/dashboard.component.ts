@@ -8,7 +8,7 @@
 */
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-dashboard',
@@ -17,21 +17,15 @@ import { Router } from '@angular/router';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   ngOnInit() {
   }
 
-// Presentation selection function
-viewPresentation(presentationId) {
-  this.router.navigate(['presentation/:presenationId']);
-  console.log(presentationId);
-}
-
-// Presentation selection function
-takeQuiz(quizId) {
-  this.router.navigate(['quiz']);
-  console.log(quizId);
-}
+  // Quiz selection function
+  takeQuiz(quizId) {
+    this.router.navigate(['quiz/' + quizId]);
+    console.log(quizId);
+  }
 
 }

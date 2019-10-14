@@ -10,7 +10,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 let presentationsSchema = new Schema({
-  presentationId: {type: String},
+  presentationId: {type: Number},
   name: {type: String},
   description: {type: String},
   slides: [String]

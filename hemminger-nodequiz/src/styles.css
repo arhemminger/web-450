@@ -1,13 +1,11 @@
-/* Importing prebuilt Angular Material theme */
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
-
 .heading {
   text-align: center;
   padding: 15px;
 }
 
 footer {
-  position: absolute;
+  position: sticky;
   bottom: 0;
   width: 100%;
+  padding: 30px 15px 10px 15px;
  }

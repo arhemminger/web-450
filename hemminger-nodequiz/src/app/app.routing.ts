@@ -38,7 +38,7 @@ export const AppRoutes: Routes = [
         ]
       },
       {
-        path: 'quiz',
+        path: 'quiz/:quizId',
         component: QuizComponent,
         //canActivate: [AuthGuard]
       },

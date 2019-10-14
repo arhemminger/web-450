@@ -87,6 +87,7 @@ app.post('/api/employees', function(req, res, next) {
 
 /************************* API routes presentations ********************/
 //Get presentation by presentationId
+/*
 app.get('/api/presentations/:id', function(req, res, next) {
   Presentation.findOne({'presentationId': req.params.id}, function(err, presentation) {
     if (err) {
@@ -98,7 +99,7 @@ app.get('/api/presentations/:id', function(req, res, next) {
     }
   })
 });
-
+*/
 /************************* API routes quizzes ********************/
 //Get quiz by quizId
 app.get('/api/quizzes/:id', function(req, res, next) {
