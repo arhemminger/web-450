@@ -12,7 +12,6 @@
 
   <br>
 
-
   <!--quiz material card-->
   <mat-card class="quiz-card">
     <mat-card-header>
@@ -42,3 +41,49 @@
 
   </mat-card>
 
+<!-- Dynamic quiz card (in progress) -->
+<!--
+<mat-card class="quiz-card">
+  <mat-card-header>
+    <mat-card-title style="text-align: center;">{{quiz.name}}</mat-card-title>
+    <mat-card-subtitle style="text-align: center;">{{quiz.description}}</mat-card-subtitle>
+  </mat-card-header>
+  <br>
+
+  <mat-card-content *ngIf="quiz.questions">
+    <div fxLayout="column">
+      <!-quiz form->
+      <form #quizForm="ngForm" (ngSubmit)="onSubmit(quizForm.value); quizForm.reset();">
+
+      <div fxLayout="column">
+        <!-questions->
+        <mat-list>
+          <div fxLayout="row" fxLayoutGap="10px">
+            <p>Question: </p>
+            <p>{{question.text}}</p>
+          </div>
+        </mat-list>
+        <br>
+
+        <!-answers->
+        <div fxLayout="row" fxLayoutGap="10px">
+          <label>Answers: </label>
+          <div fxLayout="column" fxLayoutGap="10px">
+            <div *ngFor="let answer of question.answers" style="flex-direction: column;">
+              <input [{ngModel}]="questions[question.id]" [checked]="questions[question.id]" value="{{answer.id}};{{answer.isCorrect}}" name="question{{question.id}}" type="radio" />
+              {{answer.text}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <br>
+
+  <!-submit button->
+  <mat-card-actions>
+      <button type="submit" fxFlex mat-raised-button color="warn">Submit</button>
+  </mat-card-actions>
+  <br>
+  </form>
+-->

@@ -28,24 +28,24 @@ export const AppRoutes: Routes = [
       {
         path: '',
         component: DashboardComponent,
-        //canActivate: [AuthGuard],
+        canActivate: [AuthGuard],
         children: [
           {
             path: 'presentation/:presentationId',
             component: PresentationComponent,
-            //canActivate: [AuthGuard]
+            canActivate: [AuthGuard]
           },
         ]
       },
       {
         path: 'quiz/:quizId',
         component: QuizComponent,
-        //canActivate: [AuthGuard]
+        canActivate: [AuthGuard]
       },
       {
         path: 'cumulative-summary',
         component: CumulativeSummaryComponent,
-        //canActivate: [AuthGuard]
+        canActivate: [AuthGuard]
       }
     ]
   },
